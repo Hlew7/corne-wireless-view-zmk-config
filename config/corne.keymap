@@ -9,16 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    macros {
-        screenshot: screenshot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN>, <&macro_press>;
-
-            label = "SCREENSHOT";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,10 +53,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL     &kp AT    &kp HASH        &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp CAPS     &trans    &kp UP_ARROW    &trans     &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &screenshot  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                  &kp LGUI        &trans     &kp SPACE    &kp RET    &trans     &kp ESC
+&kp TAB    &kp EXCL  &kp AT    &kp HASH        &kp DLLR   &kp PRCNT            &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &kp CAPS  &trans    &kp UP_ARROW    &trans     &kp C_VOLUME_UP      &kp MINUS  &kp EQUAL  &kp BACKSLASH    &kp LBKT  &kp RBKT  &kp GRAVE
+&kp LSHFT  &trans    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp C_VOLUME_DOWN    &kp UNDER  &kp PLUS   &kp PIPE         &kp LBRC  &kp RBRC  &kp TILDE
+                               &kp LGUI        &trans     &kp SPACE            &kp RET    &trans     &kp ESC
             >;
         };
     };
