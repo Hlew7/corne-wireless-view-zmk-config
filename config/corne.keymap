@@ -9,22 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    macros {
-        windows_screenshot: windows_screenshot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "WINDOWS_SCREENSHOT";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -37,10 +21,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp L         &kp P  &kp G        &kp K    &kp U  &kp O       &kp SLASH      &kp J  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S         &kp T  &kp D        &kp H    &kp I  &kp E       &kp SEMICOLON  &kp N  &mt RCTRL SQT
-&kp LSHFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp F    &kp M  &kp PERIOD  &kp MINUS      &kp Y  &mt RIGHT_SHIFT COMMA
-                         &kp LEFT_ALT  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp ESC
+&kp TAB    &kp Q  &kp W  &kp L                  &kp P  &kp G        &kp K    &kp U  &kp O       &kp SLASH      &kp J  &kp BSPC
+&kp LCTRL  &kp A  &kp R  &kp S                  &kp T  &kp D        &kp H    &kp I  &kp E       &kp SEMICOLON  &kp N  &mt RCTRL SQT
+&kp LSHFT  &kp Z  &kp X  &kp C                  &kp V  &kp B        &kp F    &kp M  &kp PERIOD  &kp MINUS      &kp Y  &mt RIGHT_SHIFT COMMA
+                         &mt LEFT_WIN LEFT_ALT  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp ESC
             >;
         };
 
@@ -53,10 +37,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB    &bt BT_NXT  &kp F9  &kp F10   &kp F11  &kp F12      &kp COMMA   &kp N7        &kp N8        &kp N9        &kp PAGE_UP    &kp BSPC
-&kp LCTRL  &bt BT_PRV  &kp F5  &kp F6    &kp F7   &kp F8       &kp PERIOD  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PAGE_DOWN  &kp DELETE
-&kp LSHFT  &bt BT_CLR  &kp F1  &kp F2    &kp F3   &kp F4       &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HOME       &kp END
-                               &kp LGUI  &trans   &kp SPACE    &kp RET     &trans        &kp ESCAPE
+&kp TAB    &bt BT_NXT  &kp F9  &kp F10            &kp F11  &kp F12      &kp COMMA   &kp N7        &kp N8        &kp N9        &kp PAGE_UP    &kp BSPC
+&kp LCTRL  &bt BT_PRV  &kp F5  &kp F6             &kp F7   &kp F8       &kp PERIOD  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PAGE_DOWN  &kp DELETE
+&kp LSHFT  &bt BT_CLR  &kp F1  &kp F2             &kp F3   &kp F4       &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HOME       &kp END
+                               &mt LGUI LEFT_ALT  &trans   &kp SPACE    &kp RET     &trans        &kp ESCAPE
             >;
         };
 
@@ -69,10 +53,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT    &kp HASH        &kp DLLR   &kp PRCNT            &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp CAPS  &trans    &kp UP_ARROW    &trans     &kp C_VOLUME_UP      &kp MINUS  &kp EQUAL  &kp BACKSLASH    &kp LBKT  &kp RBKT  &kp GRAVE
-&kp LSHFT  &trans    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp C_VOLUME_DOWN    &kp UNDER  &kp PLUS   &kp PIPE         &kp LBRC  &kp RBRC  &kp TILDE
-                               &kp LGUI        &trans     &kp SPACE            &kp RET    &trans     &kp ESC
+&kp TAB    &kp EXCL       &kp AT    &kp HASH           &kp DLLR   &kp PRCNT            &kp CARET  &kp AMPS   &kp ASTRK      &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &kp CAPS       &trans    &kp UP_ARROW       &trans     &kp C_VOLUME_UP      &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp LBKT  &kp RBKT  &kp GRAVE
+&kp LSHFT  &kp LG(LS(S))  &kp LEFT  &kp DOWN_ARROW     &kp RIGHT  &kp C_VOLUME_DOWN    &kp UNDER  &kp PLUS   &kp PIPE       &kp LBRC  &kp RBRC  &kp TILDE
+                                    &mt LGUI LEFT_ALT  &trans     &kp SPACE            &kp RET    &trans     &kp ESC
             >;
         };
     };
