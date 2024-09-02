@@ -9,6 +9,22 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        windows_screenshot: windows_screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp LEFT_WIN &kp LEFT_SHIFT &kp S>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "WINDOWS_SCREENSHOT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
