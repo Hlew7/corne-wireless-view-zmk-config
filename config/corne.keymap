@@ -53,10 +53,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL       &kp AT      &kp HASH        &kp DLLR    &kp PRCNT            &kp CARET  &kp AMPS   &kp ASTRK      &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp CAPS       &kp K_PREV  &kp UP_ARROW    &kp K_NEXT  &kp C_VOLUME_UP      &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp LBKT  &kp RBKT  &kp GRAVE
-&kp LSHFT  &kp LG(LS(S))  &kp LEFT    &kp DOWN_ARROW  &kp RIGHT   &kp C_VOLUME_DOWN    &kp UNDER  &kp PLUS   &kp PIPE       &kp LBRC  &kp RBRC  &kp TILDE
-                                      &kp LEFT_WIN    &trans      &kp SPACE            &kp RET    &trans     &kp ESC
+&kp TAB    &kp EXCL       &kp AT          &kp HASH        &kp DLLR    &kp PRCNT            &kp CARET  &kp AMPS   &kp ASTRK      &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &kp CAPS       &kp C_PREVIOUS  &kp UP_ARROW    &kp C_NEXT  &kp C_VOLUME_UP      &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp LBKT  &kp RBKT  &kp GRAVE
+&kp LSHFT  &kp LG(LS(S))  &kp LEFT        &kp DOWN_ARROW  &kp RIGHT   &kp C_VOLUME_DOWN    &kp UNDER  &kp PLUS   &kp PIPE       &kp LBRC  &kp RBRC  &kp TILDE
+                                          &kp LEFT_WIN    &trans      &kp SPACE            &kp RET    &trans     &kp ESC
             >;
         };
     };
