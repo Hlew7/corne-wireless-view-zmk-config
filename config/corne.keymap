@@ -37,10 +37,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB    &bt BT_NXT  &kp F9  &kp F10       &kp F11       &kp F12      &kp COMMA   &kp N7        &kp N8        &kp N9        &kp PAGE_UP    &kp BSPC
-&kp LCTRL  &bt BT_PRV  &kp F5  &kp F6        &kp F7        &kp F8       &kp PERIOD  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PAGE_DOWN  &kp DELETE
-&kp LSHFT  &bt BT_CLR  &kp F1  &kp F2        &kp F3        &kp F4       &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HOME       &kp END
-                               &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE    &kp RET     &trans        &kp ESCAPE
+&kp TAB    &bt BT_NXT  &kp F9  &kp F10       &kp F11  &kp F12      &kp COMMA   &kp N7        &kp N8        &kp N9        &kp PAGE_UP    &kp BSPC
+&kp LCTRL  &bt BT_PRV  &kp F5  &kp F6        &kp F7   &kp F8       &kp PERIOD  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PAGE_DOWN  &kp DELETE
+&kp LSHFT  &bt BT_CLR  &kp F1  &kp F2        &kp F3   &kp F4       &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HOME       &kp END
+                               &kp LEFT_ALT  &trans   &kp SPACE    &kp RET     &kp LEFT_GUI  &kp ESCAPE
             >;
         };
 
@@ -53,10 +53,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL       &kp AT                         &kp HASH        &kp DLLR                   &kp PRCNT            &kp CARET  &kp AMPS      &kp ASTRK      &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp CAPS       &mt C_FAST_FORWARD C_PREVIOUS  &kp UP_ARROW    &mt C_FAST_FORWARD C_NEXT  &kp C_VOLUME_UP      &kp MINUS  &kp EQUAL     &kp BACKSLASH  &kp LBKT  &kp RBKT  &kp GRAVE
-&kp LSHFT  &kp LG(LS(S))  &kp LEFT                       &kp DOWN_ARROW  &kp RIGHT                  &kp C_VOLUME_DOWN    &kp UNDER  &kp PLUS      &kp PIPE       &kp LBRC  &kp RBRC  &kp TILDE
-                                                         &kp LEFT_ALT    &trans                     &kp SPACE            &kp RET    &kp LEFT_GUI  &kp ESC
+&kp TAB    &kp EXCL       &kp AT                         &kp HASH        &kp DLLR                   &kp PRCNT            &kp CARET  &kp AMPS   &kp ASTRK      &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &kp CAPS       &mt C_FAST_FORWARD C_PREVIOUS  &kp UP_ARROW    &mt C_FAST_FORWARD C_NEXT  &kp C_VOLUME_UP      &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp LBKT  &kp RBKT  &kp GRAVE
+&kp LSHFT  &kp LG(LS(S))  &kp LEFT                       &kp DOWN_ARROW  &kp RIGHT                  &kp C_VOLUME_DOWN    &kp UNDER  &kp PLUS   &kp PIPE       &kp LBRC  &kp RBRC  &kp TILDE
+                                                         &kp LEFT_ALT    &kp LEFT_GUI               &kp SPACE            &kp RET    &trans     &kp ESC
             >;
         };
     };
